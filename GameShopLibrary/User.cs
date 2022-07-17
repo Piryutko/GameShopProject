@@ -30,9 +30,9 @@ namespace GameShopLibrary
         {
             
         }
-        public void ChangePayment()
+        public void ChangePayment(PaymentOption newPaymentMethod)
         {
-            
+            PaymentOption = newPaymentMethod;
         }
     }
 }
