@@ -2,9 +2,9 @@
 
 namespace GameShopLibrary
 {
-    class OnlineGameItem : Item
+    class PayOnlineGameItem : Item
     {
-        public OnlineGameItem(string name, int coast, Guid itemId, int numberOfMonths) : base(name, coast, itemId)
+        public PayOnlineGameItem(string name, int coast, Guid itemId, int numberOfMonths) : base(name, coast, itemId)
         {
             Subscription = numberOfMonths;
         }
