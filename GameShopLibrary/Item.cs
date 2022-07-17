@@ -1,58 +1,36 @@
 ﻿using System;
 
-
 namespace GameShopLibrary
 {
     class Item
     {
-        public Item(string name,int coast)
+        public Item(string name,int coast,Guid itemId)
         {
             Name = name;
             Cost = coast;
+            ItemId = itemId;
         }
-        public string Name { get;}
-        public int Cost { get;}
-        public virtual string BuyersUser(string name)
-        {
-            return name;
-        }
-
+        public string Name { get; }
+        public int Cost { get; }
+        public Guid ItemId { get; }
     }
-    class ItemSubscription : Item
+    class PayOneGameItem : Item
     {
-        public ItemSubscription(string name, int coast):base (name,coast)
-        {
 
-        }
-        public override string BuyersUser(string nameSubscription)
-        {
-            return nameSubscription;
-        }
-        public bool RenewSubscription(bool registrationSubscriptionRenewal)
-        {
-            return registrationSubscriptionRenewal;
-        }
+        
     }
-    class ItemOnline : Item
+    class OnlineGameItem : Item
     {
-        public ItemOnline(string name, int coast) : base (name, coast)
+        public OnlineGameItem(string name, int coast, Guid itemId,int numberOfMonths) : base(name, coast, itemId)
         {
+            Subscription = numberOfMonths;
+        }
+        public int Subscription { get; set; }
 
-        }
-        public override string BuyersUser(string nameItemOnline)
+        public void SubscriptionRenewal(int addingSubscriptionMonths)
         {
-            return nameItemOnline;
+            Subscription = addingSubscriptionMonths;
         }
-        public bool SaleOnlineProductSubscription (bool subscriptionRegistration)
-        {
-            return subscriptionRegistration;
-        }
-
-        public bool RenewSubscription(bool registration)
-        {
-            return registration;
-        }
-
     }
 
 
