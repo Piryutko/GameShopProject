@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace GameShopLibrary
 {
-    public enum CategoryGame
+    enum PaymentOption
     {
-        Single,
-        Cooperative,
-        Multiplayer,
+        Mir,
+        Visa,
+        MasterCard,
+        Maestro,
+        BitCoin,
+        Ethereum,
     }
 }

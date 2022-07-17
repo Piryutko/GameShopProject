@@ -5,7 +5,7 @@ namespace GameShopLibrary
     
     public class Game
     {
-        public Game(string name,int coast, GenreGame genre, CategoryGame category, PlatformaGame platforma)
+        public Game(string name,int coast, GameGenre genre, GameCategory category, GamePlatforma platforma)
         {
             Name = name;
             Coast = coast;
@@ -17,11 +17,11 @@ namespace GameShopLibrary
 
         public int Coast { get;}
 
-        public GenreGame Genre { get;}
+        public GameGenre Genre { get;}
 
-        public CategoryGame Category { get;}
+        public GameCategory Category { get;}
 
-        public PlatformaGame Platforma { get;}
+        public GamePlatforma Platforma { get;}
 
     }
 

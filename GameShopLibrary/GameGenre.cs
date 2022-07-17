@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace GameShopLibrary
 {
-    public enum GenreGame
+    public enum GameGenre
         {
             Action,
             Shooter,
-            Adventures,
+            Adventures,  
             RolePlay,
             Indi,
             Simulators,

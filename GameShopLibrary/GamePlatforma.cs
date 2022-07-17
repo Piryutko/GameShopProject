@@ -2,7 +2,7 @@
 
 namespace GameShopLibrary
 {
-        public enum PlatformaGame
+        public enum GamePlatforma
         {
             PC,
             PlayStation,

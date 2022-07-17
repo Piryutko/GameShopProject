@@ -4,13 +4,13 @@ namespace GameShopLibrary
 {
     class User
     {
-        public User(string firstname,string lastname,string nickname,Guid id,string paymentoption)
+        public User(string firstName,string lastName,string nickName,Guid id,PaymentOption paymentOption)
         {
-            FirstName = firstname;
-            LastName = lastname;
-            NickName = nickname;
+            FirstName = firstName;
+            LastName = lastName;
+            NickName = nickName;
             Id = id;
-            PaymentOption = paymentoption;
+            PaymentOption = paymentOption;
         }
         public string FirstName { get;}
 
@@ -20,19 +20,19 @@ namespace GameShopLibrary
 
         public Guid Id { get; }
 
-        public string PaymentOption { get; set; }
+        public PaymentOption PaymentOption;
 
-        public string ChangeNickName(ref User nickName)
+        public void ChangeNickName(string newNickName)
         {
-            return nickName.NickName;
+            NickName = newNickName;
         }
-        public string PurchasesMade(string shoppingCart)
+        public void PurchasesMade()
         {
-            return shoppingCart;
+            
         }
-        public string ChangePayment(ref User paymentOption)
+        public void ChangePayment()
         {
-            return paymentOption.PaymentOption;
+            
         }
     }
 }
