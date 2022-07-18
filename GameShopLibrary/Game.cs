@@ -22,7 +22,6 @@ namespace GameShopLibrary
         public GameCategory Category { get; }
 
         public GamePlatforma Platforma { get; }
-
     }
 
     
