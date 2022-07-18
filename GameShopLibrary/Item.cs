@@ -4,26 +4,16 @@ namespace GameShopLibrary
 {
     class Item
     {
-        public Item(string name,Game languageGame,Game publisherGame,Game discountGame,Game coast, Guid itemId)
+        public Item(int coast, Guid id)
         {
-            Name = name;
-            LanguageGame = languageGame;
-            PublisherGame = publisherGame;
-            DiscountGame = discountGame;
-            Cost = coast;
-            ItemId = itemId;
+            Coast = coast;
+            ItemId = id;
         }
-        public string Name { get; }
 
-        public Game LanguageGame { get; set; }
-
-        public Game PublisherGame { get; set; }
-
-        public Game DiscountGame { get; set; }
-
-        public Game Cost { get; }
-
+        public Game Game;
+        public int Coast { get; set; } 
         public Guid ItemId { get; }
-    }
 
+    }
+   
 }
