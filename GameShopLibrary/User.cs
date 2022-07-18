@@ -27,7 +27,7 @@ namespace GameShopLibrary
         {
             NickName = newNickName;
         }
-        public List<Game> PurchasesMade()
+        public List<Game> AllGameUser()
         {
             var GameListShopping = new List<Game>() { };
             foreach (var item in GameListShopping)
