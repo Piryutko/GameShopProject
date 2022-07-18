@@ -27,9 +27,9 @@ namespace GameShopLibrary
         {
             NickName = newNickName;
         }
-        public void PurchasesMade()
+        public List<Game> PurchasesMade()
         {
-            
+            return GameListShopping;
         }
         public void ChangePayment(PaymentOption newPaymentMethod)
         {
