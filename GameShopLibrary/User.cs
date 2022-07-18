@@ -27,14 +27,13 @@ namespace GameShopLibrary
         {
             NickName = newNickName;
         }
-        public void PurchasesMade()
+        public void PurchasesMade(List<Game> game)
         {
-
+            
         }
         public void ChangePayment(PaymentOption newPaymentMethod)
         {
             PaymentOption = newPaymentMethod;
         }
-        
     }
 }
