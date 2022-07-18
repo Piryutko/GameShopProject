@@ -4,9 +4,8 @@ namespace GameShopLibrary
 {
     class Item
     {
-        public Item(string name, int coast, Guid itemId)
+        public Item(int coast, Guid itemId)
         {
-            Name = name;
             Cost = coast;
             ItemId = itemId;
         }
