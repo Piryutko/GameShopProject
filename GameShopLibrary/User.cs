@@ -27,7 +27,7 @@ namespace GameShopLibrary
         {
             NickName = newNickName;
         }
-        public void PurchasesMade(List<Game> game)
+        public void PurchasesMade()
         {
             
         }
