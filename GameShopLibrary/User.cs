@@ -5,7 +5,7 @@ namespace GameShopLibrary
 {
     class User
     {
-        public User(string firstName,string lastName,string nickName,Guid id,PaymentOption paymentOption)
+        public User(string firstName, string lastName, string nickName, Guid id, PaymentOption paymentOption)
         {
             FirstName = firstName;
             LastName = lastName;
@@ -29,15 +29,12 @@ namespace GameShopLibrary
         }
         public void PurchasesMade()
         {
-            
+
         }
         public void ChangePayment(PaymentOption newPaymentMethod)
         {
             PaymentOption = newPaymentMethod;
         }
-        public void GetUsersPurchases()
-        {   
-
-        }
+        
     }
 }
