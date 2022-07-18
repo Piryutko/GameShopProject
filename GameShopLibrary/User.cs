@@ -30,6 +30,10 @@ namespace GameShopLibrary
         public List<Game> PurchasesMade()
         {
             var GameListShopping = new List<Game>() { };
+            foreach (var item in GameListShopping)
+            {
+
+            }
             return GameListShopping;
         }
         public void ChangePayment(PaymentOption newPaymentMethod)
