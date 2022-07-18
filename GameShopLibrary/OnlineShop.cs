@@ -13,15 +13,15 @@ namespace GameShopLibrary
             Category = category;
             Platforma = platforma;
         }
-        public string Name { get;}
+        public string Name { get; }
 
-        public int Coast { get;}
+        public int Coast { get; }
 
-        public GameGenre Genre { get;}
+        public GameGenre Genre { get; }
 
-        public GameCategory Category { get;}
+        public GameCategory Category { get; }
 
-        public GamePlatforma Platforma { get;}
+        public GamePlatforma Platforma { get; }
 
     }
 

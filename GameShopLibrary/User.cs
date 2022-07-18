@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GameShopLibrary
 {
@@ -12,9 +13,9 @@ namespace GameShopLibrary
             Id = id;
             PaymentOption = paymentOption;
         }
-        public string FirstName { get;}
+        public string FirstName { get; }
 
-        public string LastName { get;}
+        public string LastName { get; }
 
         public string NickName { get; set; }
 
@@ -33,6 +34,10 @@ namespace GameShopLibrary
         public void ChangePayment(PaymentOption newPaymentMethod)
         {
             PaymentOption = newPaymentMethod;
+        }
+        public void GetUsersPurchases()
+        {   
+
         }
     }
 }
