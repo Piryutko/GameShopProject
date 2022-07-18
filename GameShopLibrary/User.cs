@@ -29,7 +29,8 @@ namespace GameShopLibrary
         }
         public List<Game> PurchasesMade()
         {
-            return new List<Game>;
+            var GameListShopping = new List<Game>() { };
+            return GameListShopping;
         }
         public void ChangePayment(PaymentOption newPaymentMethod)
         {
