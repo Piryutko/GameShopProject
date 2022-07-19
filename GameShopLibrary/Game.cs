@@ -5,17 +5,14 @@ namespace GameShopLibrary
     
     public class Game
     {
-        public Game(string name,int cost, GameGenre genre, GameCategory category, GamePlatforma platforma)
+        public Game(string name, GameGenre genre, GameCategory category, GamePlatforma platforma)
         {
             Name = name;
-            Cost = cost;
             Genre = genre;
             Category = category;
             Platforma = platforma;
         }
         public string Name { get; }
-
-        public int Cost { get; }
 
         public GameGenre Genre { get; }
 
@@ -23,8 +20,4 @@ namespace GameShopLibrary
 
         public GamePlatforma Platforma { get; }
     }
-
-    
-    
-
 }
