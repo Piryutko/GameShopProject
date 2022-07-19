@@ -4,16 +4,16 @@ namespace GameShopLibrary
 {
     class Item
     {
-        public Item(int coast, Guid id)
+        public Item(int cost, Guid id,Game game)
         {
-            Coast = coast;
+            Cost = cost;
             ItemId = id;
+            Game = game;
         }
 
         public Game Game;
-        public int Coast { get; set; } 
+        public int Cost { get; set; } 
         public Guid ItemId { get; }
-
     }
    
 }

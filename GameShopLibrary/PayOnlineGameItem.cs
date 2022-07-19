@@ -4,7 +4,7 @@ namespace GameShopLibrary
 {
     class PayOnlineGameItem : Item
     {
-        public PayOnlineGameItem(int coast, Guid itemId, int numberOfMonths) : base(coast, itemId)
+        public PayOnlineGameItem(int cost, Guid itemId, int numberOfMonths,Game game) : base(cost, itemId,game)
         {
             Subscription = numberOfMonths;
         }
