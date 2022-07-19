@@ -4,15 +4,26 @@ namespace GameShopLibrary
 {
     class PayOnlineGameItem : Item
     {
-        public PayOnlineGameItem(int cost, Guid itemId, int numberOfMonths,Game game) : base(cost, itemId,game)
+        public PayOnlineGameItem(int cost, Guid itemId, DateTime numberOfMonths, Game game) : base(cost, itemId, game)
         {
             Subscription = numberOfMonths;
         }
-        public int Subscription { get; set; }
+        public DateTime Subscription { get; set; }
 
-        public void SubscriptionRenewal(int addingSubscriptionMonths)
+        public void BuySubscription(int numberMonths)
         {
-            Subscription = addingSubscriptionMonths;
+            Subscription = Subscription.AddMonths(numberMonths);
+        }
+        public void FindSubscriptionStatus()
+        {
+            if (Subscription == DateTime.MinValue)
+            {
+
+            }
+            else
+            {
+                
+            }
         }
     }
 }
