@@ -17,19 +17,19 @@ namespace GameShopLibrary
 
         public string LastName { get; }
 
-        public string NickName { get; set; }
+        public string NickName { get; private set; }
 
         public Guid Id { get; }
 
-        public PaymentOption PaymentOption;
+        public PaymentOption PaymentOption { get; private set; }
 
         public void ChangeNickName(string newNickName)
         {
             NickName = newNickName;
         }
-        public List<Game> AllGameUser()
+        public List<Item> AllItem()
         {
-            var GameListShopping = new List<Game>() { };
+            var GameListShopping = new List<Item>(){ };
             foreach (var item in GameListShopping)
             {
 

@@ -7,13 +7,13 @@ namespace GameShopLibrary
         public Item(int cost, Guid id, Game game)
         {
             Cost = cost;
-            ItemId = id;
+            Id = id;
             Game = game;
         }
 
-        public Game Game;
-        public int Cost { get; set; } 
-        public Guid ItemId { get; }
+        public Game Game { get; }
+        public int Cost { get; } 
+        public Guid Id { get; }
     }
    
 }

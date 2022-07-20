@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace GameShopWeb.Controllers
 {
@@ -16,23 +13,18 @@ namespace GameShopWeb.Controllers
         public void AllGame()
         { 
         }
+
         [Route("GameShop/user/buygames")]
         [HttpGet]
-        public void BuyGame()
+        public void Buy()
         { 
         }
-        [Route("GameShop/user/buygames")]
+
+        [Route("GameShop/user/")]
         [HttpPost]
         public void ChangeName(string newName)
         { 
         }
-
-
-
-
-
-
-
 
     }
 }

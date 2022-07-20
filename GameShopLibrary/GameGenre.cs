@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace GameShopLibrary
 {
     public enum GameGenre
