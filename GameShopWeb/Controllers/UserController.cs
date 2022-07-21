@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace GameShopWeb.Controllers
 {
@@ -8,23 +6,34 @@ namespace GameShopWeb.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        [Route("GameShop/user/allgame")]
+        [Route("GameShop/user/allitem")]
         [HttpGet]
-        public void AllGame()
+        public void AllItem()
         { 
         }
 
-        [Route("GameShop/user/buygames")]
-        [HttpGet]
-        public void Buy()
-        { 
-        }
-
-        [Route("GameShop/user/")]
+        [Route("GameShop/user/buyitem")]
         [HttpPost]
-        public void ChangeName(string newName)
+        public void BuyItem()
         { 
         }
 
+        [Route("GameShop/user/changename")]
+        [HttpPut]
+        public void ChangeName(string name)
+        { 
+        }
+
+        [Route("GameShop/user/createuser")]
+        [HttpPut]
+        public void СreateUser()
+        { 
+        }
+
+        [Route("GameShop/user/deleteuser")]
+        [HttpDelete]
+        public void DeleteUser()
+        {
+        }
     }
 }

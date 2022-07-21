@@ -2,7 +2,6 @@
 
 namespace GameShopLibrary
 {
-    
     public class Game
     {
         public Game(string name, GameGenre genre, GameCategory category, GamePlatforma platforma, Guid id)
