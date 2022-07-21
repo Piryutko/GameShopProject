@@ -26,7 +26,7 @@ namespace GameShopLibrary
         }
         public bool IsActive()
         {
-            if (ExpirationDate.Date.Day + SUBSCRIPTIONDAYS > DateTime.Now.Day)
+            if (ExpirationDate.Date.Day > DateTime.Now.Day)
             {
                 return true;
             }
