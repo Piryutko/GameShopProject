@@ -6,19 +6,19 @@ namespace GameShopWeb.Controllers
     [ApiController]
     public class ItemController : ControllerBase
     {
-        [Route("GameShop/item/itemadd")]
-        [HttpPut]
+        [Route("add")]
+        [HttpPost]
         public void ItemAdd()
         {
         }
 
-        [Route("GameShop/item/itemdelete")]
-        [HttpPut]
+        [Route("delete")]
+        [HttpDelete]
         public void ItemDelete()
         {
         }
 
-        [Route("GameShop/item/itemchange")]
+        [Route("change")]
         [HttpPost]
         public void ItemChange()
         {

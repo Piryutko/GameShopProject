@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace GameShopWeb.Controllers
 {
@@ -6,31 +7,31 @@ namespace GameShopWeb.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        [Route("GameShop/user/allitem")]
+        [Route("all")]
         [HttpGet]
         public void AllItem()
         { 
         }
 
-        [Route("GameShop/user/buyitem")]
+        [Route("buy")]
         [HttpPost]
         public void BuyItem()
         { 
         }
 
-        [Route("GameShop/user/changename")]
+        [Route("changename/{name}")]
         [HttpPut]
-        public void ChangeName(string name)
+        public void ChangeName()
         { 
         }
 
-        [Route("GameShop/user/createuser")]
-        [HttpPut]
+        [Route("create")]
+        [HttpPost]
         public void СreateUser()
         { 
         }
 
-        [Route("GameShop/user/deleteuser")]
+        [Route("delete/{id}")]
         [HttpDelete]
         public void DeleteUser()
         {
