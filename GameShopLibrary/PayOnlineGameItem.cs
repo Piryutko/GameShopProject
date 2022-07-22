@@ -24,6 +24,7 @@ namespace GameShopLibrary
                 return ExpirationDate.AddDays(SUBSCRIPTIONDAYS);
             }
         }
+        
         public bool IsActive()
         {
             if (ExpirationDate.Date.Day > DateTime.Now.Day)
