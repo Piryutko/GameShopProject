@@ -11,7 +11,7 @@ namespace GameShopLibrary
 
         public DateTime ExpirationDate { get; private set; }
 
-        private const int SUBSCRIPTIONDAYS = 30;
+        private const int SUBSCRIPTIONMONTH = 1;
 
         public DateTime BuySubscription()
         {
@@ -21,20 +21,13 @@ namespace GameShopLibrary
             }
             else
             {
-                return ExpirationDate.AddDays(SUBSCRIPTIONDAYS);
+                return ExpirationDate.AddMonths(SUBSCRIPTIONMONTH);
             }
         }
         
         public bool IsActive()
         {
-            if (ExpirationDate.Date.Day > DateTime.Now.Day)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return ExpirationDate.Date.Month > DateTime.Now.Month;
         }
     }
 }
