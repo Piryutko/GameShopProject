@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EnsureThat;
+using System;
 using System.Collections.Generic;
 
 namespace GameShopLibrary
@@ -7,6 +8,9 @@ namespace GameShopLibrary
     {
         public User(string firstName, string lastName, string nickName, Guid id, PaymentOption paymentOption)
         {
+            Ensure.That(firstName).IsNotNullOrWhiteSpace();
+            Ensure.That(lastName).IsNotNullOrWhiteSpace();
+            Ensure.That(nickName).IsNotNullOrWhiteSpace();
             FirstName = firstName;
             LastName = lastName;
             NickName = nickName;

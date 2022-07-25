@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EnsureThat;
+using System;
 
 namespace GameShopLibrary
 {
@@ -6,6 +7,7 @@ namespace GameShopLibrary
     {
         public Game(string name, GameGenre genre, GameCategory category, GamePlatforma platform, Guid id)
         {
+            Ensure.That(name).IsNotNullOrWhiteSpace();
             Name = name;
             Genre = genre;
             Category = category;

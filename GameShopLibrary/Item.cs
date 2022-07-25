@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EnsureThat;
+using System;
 
 namespace GameShopLibrary
 {
