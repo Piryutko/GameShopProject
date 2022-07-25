@@ -4,12 +4,12 @@ namespace GameShopLibrary
 {
     public class Game
     {
-        public Game(string name, GameGenre genre, GameCategory category, GamePlatforma platforma, Guid id)
+        public Game(string name, GameGenre genre, GameCategory category, GamePlatforma platform, Guid id)
         {
             Name = name;
             Genre = genre;
             Category = category;
-            Platforma = platforma;
+            Platform = platform;
             Id = id;
         }
         public string Name { get; }
@@ -18,7 +18,7 @@ namespace GameShopLibrary
 
         public GameCategory Category { get; }
 
-        public GamePlatforma Platforma { get; }
+        public GamePlatforma Platform { get; }
 
         public Guid Id { get; }
     }
