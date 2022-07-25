@@ -4,7 +4,7 @@ namespace GameShopLibrary
 {
     class PayOnlineGameItem : Item
     {
-        public PayOnlineGameItem(int cost, Guid id, Game game) : base(cost, id, game)
+        public PayOnlineGameItem(double cost, Guid id, Game game) : base(cost, id, game)
         {
             ExpirationDate = DateTime.Now;
         }
