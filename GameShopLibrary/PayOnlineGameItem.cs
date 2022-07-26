@@ -27,7 +27,7 @@ namespace GameShopLibrary
         
         public bool IsActive()
         {
-            return ExpirationDate.Date.Month > DateTime.Now.Month;
+            return ExpirationDate.Date > DateTime.Now;
         }
     }
 }
