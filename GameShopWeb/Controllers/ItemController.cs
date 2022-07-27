@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using GameShopLibrary;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
 
 namespace GameShopWeb.Controllers
 {
@@ -6,22 +9,27 @@ namespace GameShopWeb.Controllers
     [ApiController]
     public class ItemController : ControllerBase
     {
-        [Route("add")]
         [HttpPost]
-        public void ItemAdd()
+        public void CreatorItem(double coast,Guid id,Game Game)
         {
         }
 
-        [Route("delete")]
         [HttpDelete]
-        public void ItemDelete()
+        public void ItemDelete(Guid id)
         {
         }
 
-        [Route("change")]
-        [HttpPost]
-        public void ItemChange()
+        [HttpPut]
+        public void ItemChange(Guid id)
         {
         }
+
+        [HttpGet]
+        public List<Item> GetItemUser(Guid userId)
+        { }
+
+        [HttpPost]
+        public void BuyItem(Guid user,Guid idItem)
+        { }
     }
 }

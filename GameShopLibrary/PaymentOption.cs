@@ -2,7 +2,7 @@
 
 namespace GameShopLibrary
 {
-    enum PaymentOption
+    public enum PaymentOption
     {
         Mir,
         Visa,

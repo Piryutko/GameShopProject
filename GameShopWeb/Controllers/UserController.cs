@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using GameShopLibrary;
+using Microsoft.AspNetCore.Mvc;
 using System;
 
 namespace GameShopWeb.Controllers
@@ -7,34 +8,17 @@ namespace GameShopWeb.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        [Route("all")]
-        [HttpGet]
-        public void AllItem()
-        { 
-        }
-
-        [Route("buy")]
         [HttpPost]
-        public void BuyItem()
-        { 
-        }
+        public void CreatorUser(string firstName, string lastName, string nickName, Guid id,PaymentOption paymentOption)
+        { }
 
-        [Route("changename/{name}")]
         [HttpPut]
-        public void ChangeName()
-        { 
-        }
+        public void ChangeName(Guid id,string newName)
+        { }
 
-        [Route("create")]
-        [HttpPost]
-        public void СreateUser()
-        { 
-        }
-
-        [Route("delete/{id}")]
         [HttpDelete]
-        public void DeleteUser()
-        {
-        }
+        public void DeleteUser(Guid id)
+        { }
+
     }
 }

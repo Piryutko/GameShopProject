@@ -3,7 +3,7 @@ using System;
 
 namespace GameShopLibrary
 {
-    class Item
+    public class Item
     {
         public Item(double cost, Guid id, Game game)
         {
