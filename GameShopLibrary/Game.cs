@@ -11,7 +11,6 @@ namespace GameShopLibrary
 
             Ensure.That(id).IsNotEmpty();
 
-            
             Name = name;
             Genre = genre;
             Category = category;

@@ -9,6 +9,8 @@ namespace GameShopLibrary
         {
             Ensure.That(cost).IsGt(0.00);
 
+            Ensure.That(id).IsNotEmpty();
+
             Cost = cost;
             Id = id;
             Game = game;
