@@ -5,7 +5,7 @@ namespace GameShopLibrary
 {
     interface IUserFacade
     {
-        public void BuyItem(Guid idGame);
+        public void BuyItem(Guid itemId,Guid userId);
 
         public void ChangeNickName(string newNickName);
 
@@ -14,6 +14,8 @@ namespace GameShopLibrary
         public List<Item> ShowAllItem();
 
         public void ChangePayment(PaymentOption paymentOption);
+
+        public void DelelteItem(Guid itemid, Guid userId);
 
     }
 }

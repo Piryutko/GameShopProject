@@ -8,16 +8,21 @@ namespace GameShopWeb.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        [Route("{firstName}/{lastName}/{nickName}/{paymentOption}")]
         [HttpPost]
-        public void CreatorUser(string firstName, string lastName, string nickName, Guid id,PaymentOption paymentOption)
-        { }
+        public void Create(string firstName, string lastName, string nickName, PaymentOption paymentOption)
+        { 
+        }
 
+        [Route("{newName}")]
         [HttpPut]
-        public void ChangeName(Guid id,string newName)
-        { }
+        public void ChangeName(string newName)
+        { 
+        }
 
+        [Route("{userId}")]
         [HttpDelete]
-        public void DeleteUser(Guid id)
+        public void Delete(Guid userId)
         { }
 
     }

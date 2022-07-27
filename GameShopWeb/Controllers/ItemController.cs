@@ -9,27 +9,34 @@ namespace GameShopWeb.Controllers
     [ApiController]
     public class ItemController : ControllerBase
     {
+        
         [HttpPost]
-        public void CreatorItem(double coast,Guid id,Game Game)
+        public void CreateItem()
         {
         }
 
+        [Route("{id}")]
         [HttpDelete]
         public void ItemDelete(Guid id)
         {
         }
 
+        [Route("{id}")]
         [HttpPut]
         public void ItemChange(Guid id)
         {
         }
 
+        [Route("{userId}")]
         [HttpGet]
-        public List<Item> GetItemUser(Guid userId)
-        { }
+        public List<Item> AllUserItems(Guid userId)
+        { 
+        }
 
+        [Route("{user}/{itemId}")]
         [HttpPost]
-        public void BuyItem(Guid user,Guid idItem)
-        { }
+        public void BuyItem(Guid user, Guid itemId)
+        { 
+        }
     }
 }
