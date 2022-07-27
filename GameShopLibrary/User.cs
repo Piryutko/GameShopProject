@@ -9,8 +9,13 @@ namespace GameShopLibrary
         public User(string firstName, string lastName, string nickName, Guid id, PaymentOption paymentOption)
         {
             Ensure.That(firstName).IsNotNullOrWhiteSpace();
+
             Ensure.That(lastName).IsNotNullOrWhiteSpace();
+
             Ensure.That(nickName).IsNotNullOrWhiteSpace();
+
+            Ensure.That(id).IsNotEmpty();
+            
             FirstName = firstName;
             LastName = lastName;
             NickName = nickName;

@@ -7,6 +7,8 @@ namespace GameShopLibrary
     {
         public Item(double cost, Guid id, Game game)
         {
+            Ensure.That(cost).IsGt(0.00);
+
             Cost = cost;
             Id = id;
             Game = game;

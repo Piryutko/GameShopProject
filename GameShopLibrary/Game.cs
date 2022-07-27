@@ -8,6 +8,10 @@ namespace GameShopLibrary
         public Game(string name, GameGenre genre, GameCategory category, GamePlatforma platform, Guid id)
         {
             Ensure.That(name).IsNotNullOrWhiteSpace();
+
+            Ensure.That(id).IsNotEmpty();
+
+            
             Name = name;
             Genre = genre;
             Category = category;
