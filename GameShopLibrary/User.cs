@@ -31,6 +31,7 @@ namespace GameShopLibrary
 
         public void ChangeNickName(string newNickName)
         {
+            Ensure.That(newNickName).IsNotNullOrWhiteSpace();
             NickName = newNickName;
         }
         public List<Item> AllItems()

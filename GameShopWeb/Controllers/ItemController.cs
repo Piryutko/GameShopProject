@@ -11,31 +11,31 @@ namespace GameShopWeb.Controllers
     {
         
         [HttpPost]
-        public void CreateItem()
+        public Guid CreateItem(string name,double coast, GameGenre genre, GameCategory category, GamePlatforma platform)
         {
         }
 
-        [Route("{id}")]
+        [Route("{itemId}")]
         [HttpDelete]
-        public void ItemDelete(Guid id)
+        public void ItemDelete()
         {
         }
 
-        [Route("{id}")]
+        [Route("{itemId}")]
         [HttpPut]
-        public void ItemChange(Guid id)
+        public void ChangePrice(double newCost)
         {
         }
 
         [Route("{userId}")]
         [HttpGet]
-        public List<Item> AllUserItems(Guid userId)
+        public List<Item> AllUserItems()
         { 
         }
 
-        [Route("{user}/{itemId}")]
+        [Route("{userId}/{itemId}")]
         [HttpPost]
-        public void BuyItem(Guid user, Guid itemId)
+        public void BuyItem()
         { 
         }
     }

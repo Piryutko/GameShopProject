@@ -1,21 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace GameShopLibrary
 {
     interface IUserFacade
     {
-        public void BuyItem(Guid itemId,Guid userId);
+        public Guid CreateUser(string firstName, string lastName, string nickName, PaymentOption paymentOption);
 
-        public void ChangeNickName(string newNickName);
+        public void ChangeNickName(Guid userId, string newNickName);
 
-        public void SelectPaymentOption(PaymentOption paymentOption);
+        public void ChangePayment(Guid userId, PaymentOption newPaymentOption);
 
-        public List<Item> ShowAllItem();
-
-        public void ChangePayment(PaymentOption paymentOption);
-
-        public void DelelteItem(Guid itemid, Guid userId);
-
+        public void DeleteUser(Guid userId);
     }
 }

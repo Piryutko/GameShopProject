@@ -5,13 +5,13 @@ namespace GameShopLibrary
 {
     public class Item
     {
-        public Item(double cost, Guid Itemid, Game game)
+        public Item(double cost, Guid itemid, Game game)
         {
             Ensure.That(cost).IsGt(0.00);
-            Ensure.That(Itemid).IsNotEmpty();
+            Ensure.That(itemid).IsNotEmpty();
 
             Cost = cost;
-            Id = Itemid;
+            Id = itemid;
             Game = game;
         }
 
